@@ -108,8 +108,7 @@ if __name__ == "__main__":
 
 
     f = open("lr_result.txt", "w")
-    f.write("f1 score: ", 2/(1 + ((pred_df['true_pos'].sum()+pred_df['false_pos'].sum())/(pred_df['true_pos'].sum()))))
-
+    f.write("f1 score: " + str(2/(1 + ((pred_df['true_pos'].sum()+pred_df['false_pos'].sum())/(pred_df['true_pos'].sum())))))
 
 
 
