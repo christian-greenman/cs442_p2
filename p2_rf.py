@@ -135,7 +135,7 @@ if __name__ == "__main__":
     # 623/775   .80387
 
 
-    f = open("rf_result.txt", "w")
+    f = open("result.txt", "a")
     f.write("f1 score: " + str(2/(1 + ((pred_df['true_pos'].sum()+pred_df['false_pos'].sum())/(pred_df['true_pos'].sum())))))
 
 
